@@ -29,14 +29,14 @@ Dataset Used: Breast Cancer Wisconsin
 
 The dataset contains features computed from digitized images of breast mass cell nuclei, such as:
 
-Radius
-Texture
-Perimeter
-Area
-Smoothness
-Compactness
-Symmetry
-Fractal Dimension
+- Radius
+- Texture
+- Perimeter
+- Area
+- Smoothness
+- Compactness
+- Symmetry
+- Fractal Dimension
 
 | Label | Meaning   |
 | ----- | --------- |
@@ -48,112 +48,44 @@ Fractal Dimension
 # 🧠 Technologies Used
 
 - Python
-- TensorFlow
-- Keras
 - NumPy
+- Pandas
 - Matplotlib
-- PIL (Python Imaging Library)
-- Streamlit
-- Ngrok
-- Google Colab
+- Seaborn
+- Scikit-learn
+- TensorFlow / Keras
 
 ---
 
-# 🏗️ CNN Architecture
+# 🏗️ Architecture
 
-The Convolutional Neural Network includes:
+The project uses a Sequential Neural Network with:
 
-- Convolution Layers
-- MaxPooling Layers
-- Flatten Layer
-- Dense Fully Connected Layers
-- Softmax Output Layer
+- Input Layer
+- Hidden Dense Layers
+- ReLU Activation Functions
+- Output Layer with Sigmoid Activation
+- Loss Function
+- Optimizer
 
-The model is trained using:
-
-- Adam Optimizer
-- Sparse Categorical Crossentropy Loss
-- Accuracy Evaluation Metric
 
 ---
 
-# 📊 Features
-
-✅ CNN-based image classification  
-✅ Real-time image prediction  
-✅ Streamlit web application  
-✅ TensorFlow/Keras model saving  
-✅ Public deployment support using Ngrok  
-✅ Interactive prediction interface  
-
----
 
 # 📁 Project Structure
 ```bash
-├── cnn_model.keras
-├── Image_Classification_CNN.ipynb
+├── Breast_Cancer_Classification.ipynb
 └── README.md
 ```
 
 ---
 
 
-# 🌐 Streamlit Deployment using Google Colab
+# 🎯 Results
 
-This project also supports deployment directly from Google Colab using:
+The neural network successfully classifies breast cancer tumors with high accuracy.
 
-- Streamlit
-- Pyngrok
-
-Deployment Steps:
-
-1. Train and save the model
-2. Run deployment section code at end of file
-3. Start Streamlit server
-4. Create public URL using Ngrok
-
----
-
-# 💾 Save Trained Model
-
-```python
-model.save("cnn_model.keras")
-```
-
----
-
-# 📥 Download Trained Model
-
-```python
-from google.colab import files
-
-files.download("cnn_model.keras")
-```
-
----
-
-# 📸 Application Preview
-
-The web application allows users to:
-
-- Upload clothing images
-- Predict clothing category
-- View prediction confidence scores
-- Display class probabilities
-
----
-
-
-# 🎯 Learning Outcomes
-
-Through this project, you can learn:
-
-- CNN fundamentals
-- TensorFlow/Keras workflow
-- Image preprocessing
-- Model training and evaluation
-- Streamlit deployment
-- Real-time AI application deployment
+The project demonstrates how deep learning can be effectively used for medical diagnosis classification tasks.
 
 ---
 
